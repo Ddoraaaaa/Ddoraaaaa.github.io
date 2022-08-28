@@ -1,0 +1,98 @@
+h1,h3,p{
+    font-family: Consolas, monaco, monospace;
+    color: rgb(27, 148, 209);
+}
+
+h1{
+    font-size: 50px;
+}
+h3{
+    font-size: 23px;
+}
+p{
+    font-size: 20px;
+}
+
+.cards {
+    margin-top: -400px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.card {
+    flex: 0 0 600px;
+    margin: 70px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(97, 223, 245);
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color: rgb(104, 217, 237);
+} 
+.card img {
+    max-width: 100%;
+}
+
+.card .text {
+    padding: 0 20px 20px;
+}
+
+body {
+    background-color: rgb(83, 215, 238);
+    margin-bottom: 3vh;
+    padding: 0;
+    overflow: hidden;
+    height: 100%; 
+    max-height: 100%; 
+    font-family:Sans-serif;
+    line-height: 1.5em;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px; 
+    overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+    background: rgb(36, 206, 236);
+}
+
+#logo {
+    padding:10px;
+    float:left;
+}
+
+main {
+    position: fixed;
+    top: 500px; /* Set this to the height of the header */
+    left: 0; 
+    right: 0;
+}
+
+.innertube {
+    margin: 30px; /* Provides padding for the content */
+}
+
+p {
+    color: #555;
+}
+
+.header1 h1 {
+    position:absolute;
+    left: 34vw;
+    bottom: 2vh
+}
+Menu
+nav { 
+    margin:0 auto; 
+    padding:0; 
+    float:right;
+}
+nav ul { 
+    margin-right: 1vw;
+    list-style:none; 
+    float:right;
+}
+nav ul li {  
+    float:left;
+}
