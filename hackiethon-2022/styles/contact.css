@@ -1,0 +1,102 @@
+/* General settings */
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;  /* Remove default <body> margin */
+}
+
+#contact {
+  font-family: 'Nunito', serif;
+  height: 100vh;
+}
+
+.contact-item {
+  width: 100%;
+  /* padding: 5px; */
+}
+
+/* Contact form + medias */ 
+
+#contact-main {
+  background-image: url('../assets/bg.gif');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+  height: 90%; 
+}
+
+#contact-form {
+  height: 100%; 
+  width: 50%;
+}
+
+#form-wrapper {
+  margin-top: 5%;
+  margin-left: 5%; 
+  padding-top: 3%; 
+  padding-left: 5%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.77), rgba(19, 66, 65, 0.5)); 
+  border-radius: 20px;  
+  height: 70%; 
+}
+
+.select, .select select {  
+  width: 100%;
+}
+
+#contact-links-wrapper {  
+  position: relative;
+  width: 50%;
+  background-size: cover;
+}
+
+#contact-links {
+  text-align: right;
+  position: absolute; 
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10%; 
+  bottom: 5%; 
+  right: 5%; 
+}
+
+.form-entry {
+  width: 80%;
+  margin: 3px; 
+}
+
+#buttons-wrapper {
+  margin-top: 4px; 
+  display: flex; 
+  gap: 4px; 
+}
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* Footer */
+
+#contact-footer {
+  background-color:  #212B2A;
+  color: white; 
+  text-align: center;
+  height: 10%; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+} 
+
+/* Flexbox */
+
+.contact-flex-container {
+  display: flex; 
+}
+

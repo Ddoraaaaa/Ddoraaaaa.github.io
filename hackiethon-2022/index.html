@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio thingy</title>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <!-- swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <!-- ??? -->
+        <script src="https://kit.fontawesome.com/3c7e1f4ad4.js" crossorigin="anonymous"></script>
+        <!-- bulma -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <script>
+            $(function() {
+                $("#contact").load("./views/contact.html");
+                $("#experience").load("./views/experience.html");
+                $("#about-me").load("./views/aboutme.html");
+                $("#landing-page").load("./views/landingpage.html");
+            });
+        </script>
+        <!-- Nunito Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
+        <style> 
+          * {
+            font-family: 'Nunito', serif;
+          }
+        </style>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio thingy</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script> 
-    $(function(){
-      $("#addtest").load("./views/test.html"); 
-    });
-    </script> 
-</head>
-
-<body>
-    <div id="addtest"></div>
-</body>
-
+    <body>
+        <header class="navbarr">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <img src="https://i.pinimg.com/736x/1e/47/fe/1e47fef15ffbc923554712272e85ba09.jpg" style="width:auto;height:7vh;margin:1vh">
+                <div class="navbar-brand">
+                    <a id="navbarBurger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarContent">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarContent" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a onclick='scrollToEl("about-me")' class="navbar-item"> About </a>
+                        <a onclick='scrollToEl("experience")' class="navbar-item"> Story </a>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons" onclick='scrollToEl("contact")' >
+                                <a class="button is-light"> Contact </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container1 y-snapper" id="bigBadBox">
+            <div id="landing-page"></div>
+            <div id="about-me"></div>
+            <div id="experience"></div>
+            <div id="contact"></div>
+        </div>
+    </body>
+    <script src="./components/navbar.js"></script>
 </html>

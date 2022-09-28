@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <script src="https://kit.fontawesome.com/3c7e1f4ad4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Note: Only the div is needed -->
+    <div id="contact"> 
+      <div id=contact-main class="contact-item contact-flex-container">
+        <div id="contact-form">
+          <div id="form-wrapper">
+            <div class="has-text-success" style="font-size:xx-large;">L...Let's chat 👉👈</div>
+            <div>To: michaelbowles@artsstudent.saul</div>
+            <form
+              action="https://formspree.io/f/mbjbobbv"
+              method="POST"
+              style="height: 100%; overflow: auto;" 
+            >
+
+              <div class="form-entry field">
+                <label>Your name</label>
+                <div class="control has-icons-left">
+                  <input class="input is-small" type="text" placeholder="Name" name="name" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="form-entry field">
+                <label>Your Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-small is-success" type="email" placeholder="Email" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="contact-flex-container form-entry" style="gap: 5%">
+                <div class="field" style="width: 50%;" style="flex:1">
+                  <label>Your message</label>
+                  <div class="control">
+                    <textarea class="textarea is-small" placeholder="Whaddayawanna tell me?" name="message" rows="3" required></textarea>
+                  </div>
+                </div>
+                <div class="field" style="flex:1;">
+                  <label>Saul Goodman?</label>
+                  <div class="control" style="width: 100%;">
+                    <div class="select is-small">
+                      <select>
+                        <option style="width: 100%;">I Better Call Saul!</option>
+                        <option>The greatest legal mind</option>
+                        <option>Worked at Optiver</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div id="buttons-wrapper" class="control">
+                    <input type="reset" class="button is-small is-warning is-dark" style="flex:1">
+                    <button type="submit" class="button is-small is-success" style="flex:1">Submit</button>
+                  </div>
+                </div>
+              </div>
+              
+
+            </form>
+
+            <script src="./components/contact.js" crossorigin="anonymous"></script>
+          </div>
+        </div> 
+        
+        <div id="contact-links-wrapper"> 
+          <div id="contact-links">
+            <a href="https://www.linkedin.com/in/saul-goodman-9b6aa21a0/" class="nostyle">
+              <i class="contact-icon fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/Ddoraaaaa/hackiethon-2022" class="nostyle">
+              <i class="contact-icon fa-brands fa-github fa-2x"></i>  
+            </a>
+            <a href="https://www.facebook.com/AttorneySaulGoodman/" class="nostyle"> 
+              <i class="contact-icon fa-brands fa-facebook fa-2x"></i>
+            </a> 
+          </div>
+        </div>
+
+      </div>
+      
+      <div id="contact-footer" class="contact-item">
+        <div>Made with ❤️ <br> artsstudents @ hackiethon2022</div>
+      </div>
+
+    </div>
+  </body>
+</html>

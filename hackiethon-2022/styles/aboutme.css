@@ -1,0 +1,183 @@
+.about-me {
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 2vh;
+}
+
+.align-left {
+    text-align: left;
+    align-items: left;
+    justify-content: center;
+}
+
+.align-right {
+    text-align: right;
+    align-items: right;
+}
+
+.line {
+    width: 16rem;
+    height: 3px;
+    background-color: palevioletred;
+    margin: 0px auto;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    background-image: url("/assets/mountains.jpg");
+    background-size: 100vw;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-background {
+    background-image: url("/assets/spring.jpg");
+}
+
+.transparent {
+    opacity: 0;
+}
+.profile {
+    margin: 1rem;
+    border: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile > img {
+    width: 250px;
+    flex-shrink: 0.6;
+    flex-basis: 10%;
+    background-color: #ffeeff;
+    margin: 0.5rem;
+    
+    border-radius: 100%;
+}
+
+.about-container > p {
+    font-size: 20px;
+    margin: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    flex-grow: 1;
+    flex-basis: 20%;
+    text-align: left;
+    background-color: #ffeeff;
+    opacity: 90%;
+}
+
+.about-container > p {
+    font-size: 20px;
+    margin: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    flex-grow: 1;
+    flex-basis: 20%;
+    text-align: left;
+    background-color: #ffeeff;
+    opacity: 90%;
+}
+
+#delay {
+    background-color: #13424199;
+    transition-duration: 1s;
+  }
+
+#delay > h1 {
+    color: black;
+    transition-duration: 1s;
+  }
+  
+#delay:hover {
+    background-color: #134241dd;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+#delay:hover > h1 {
+    color: #dcdcdc;
+    transition-duration: 1s;
+}
+
+
+.header {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px auto;
+    color: black;
+}
+
+.header-big {
+    font-size: 80px;
+}
+
+.fullscreen {
+    width: 100vw;
+    height: 111vh;
+    border-radius: 0;
+}
+
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 10rem;
+}
+
+.circle {
+    display: flex;
+    transition-duration: 1s;
+    background-size: 100%;
+    font-size: 28px;
+    margin: 2rem;
+    padding: 0.5rem;
+    border-radius: 30%;
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 20%;
+    background-color: #ffeeff;
+    opacity: 90%;
+    height: 80%;
+    color: #121212;
+    font-weight: bold;
+    max-width: 20vw;
+}
+
+.circle:hover {
+    transition-duration: 1s;
+    border-radius: 1rem;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#photo {
+    background-image: url(/assets/photo.jpg);
+}
+
+#simulation {
+    background-image: url(/assets/simulation.jpg);
+}
+
+#programming {
+    background-image: url(/assets/programming_alt.jpg);
+}

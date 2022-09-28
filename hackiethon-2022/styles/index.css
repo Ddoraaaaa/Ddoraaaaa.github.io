@@ -1,0 +1,63 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.y-snapper { 
+    height: 100vh;
+    width: 100vw; 
+    display: flex;
+    overflow: auto; 
+    flex: none;
+    flex-flow: column nowrap;
+    scroll-snap-type: y mandatory; 
+    scroll-behavior: smooth;
+}
+.y-snapper > div { 
+    /* overflow: hidden;  */
+    height: 100vh;
+    width: 100vw; 
+    scroll-snap-align: start;
+    flex: none;
+    overflow: hidden;
+}
+
+.section {
+    flex-basis: auto;
+}
+
+.nav--hidden {
+    transform: translateY(-10vh);
+    box-shadow: none;
+}
+
+hr.border-line {
+    margin: 0;
+    height: 3px;
+    background: #333;
+    background-image: linear-gradient(to right, rgb(225, 225, 225, 1), rgb(0, 0, 0, 1), rgb(225, 225, 225, 1));
+    width: 70vw;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+hr.small-border-line {
+    margin: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, rgb(225, 225, 225, 1), rgb(150, 150, 150, 1), rgb(225, 225, 225, 1));
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table.summary td:nth-child(4) {
+    border-left: 2px solid #000;
+}

@@ -1,0 +1,90 @@
+.enp-card {
+  margin-top: 1vmin;
+  margin-bottom: 1vmin;
+  display: flex;
+  justify-content: center;
+}
+
+.enp {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-thing{
+  border-radius: 2vmin;
+  width:15vh;
+  height:13vh;
+}
+
+.img-thing-summary{
+  border-radius: 1vmin;
+  width:10vh;
+  height:10vh;
+}
+.swiper-button-next { 
+  color: rgb(34, 119, 101); 
+}
+.swiper-button-prev { 
+  color: rgb(34, 119, 101); 
+}
+
+.swiper>.swiper-pagination { 
+  position: relative; 
+  top: -1vh; 
+  left: 0vw; 
+  right: 100vw;
+  display:flex;
+  flex-direction: row;  
+}
+.swiper-pagination-bullet {
+	border-radius: 0;
+  /* margin: 5px;  */
+	width: 25vw;
+	height: 0.9vh;
+	text-align: center;
+	font-size: 12px;
+	color:#000;
+	opacity: 1;
+	background: rgba(35, 108, 92, 0.2);
+}
+.swiper-pagination-bullet-active {
+	color:#fff;
+	background: radial-gradient(rgba(34, 119, 101), rgba(35, 108, 92, 0.2)) ; 
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.control-slide.swiper-slide {
+  width: 20%;
+  height: 60%;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 0.6;
+}
+.control-slide.swiper-slide-active {
+  opacity: 1;
+}
+
+#background-swiper { 
+  width: 100%;
+  height: 100%;
+  opacity: 0.35;
+}
+#content-swiper { 
+  position: relative;
+  top: -100%; 
+  width: 100%;
+  height: 100%;
+}
+#control-swiper { 
+  position: relative;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  top: -100%; 
+}
